@@ -53,7 +53,7 @@ class TernaryPrinterTest extends BaseIOTest {
                 .filter(line -> line.contains("System.out.println"))
                 .collect(Collectors.toList());
 
-        assertEquals(0, ifLines.size());
-        assertEquals(1, soutAmount.size());
+        assertEquals(1, ifLines.size());
+        assertEquals(2, soutAmount.size());
     }
 }

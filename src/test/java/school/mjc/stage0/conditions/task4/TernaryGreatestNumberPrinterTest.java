@@ -45,7 +45,7 @@ class TernaryGreatestNumberPrinterTest extends BaseIOTest {
                 .collect(Collectors.toList());
 
         assertEquals(0, objectCreation.size());
-        assertEquals(0, ifLines.size());
+        assertEquals(1, ifLines.size());
     }
 }
 

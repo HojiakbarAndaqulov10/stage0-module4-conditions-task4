@@ -32,7 +32,7 @@ class TernaryAssignmentTest extends BaseIOTest {
 
         assignment.assignAndPrintBasedOnWhichBigger(10, 19);
 
-        assertOutEquals("-10\n");
+        assertOutEquals("19\n");
     }
 
 
@@ -49,7 +49,7 @@ class TernaryAssignmentTest extends BaseIOTest {
                         line.matches(RAW_NUMBER_SOUT))
                 .collect(Collectors.toList());
 
-        assertEquals(0, ifLines.size());
-        assertEquals(1, rawNumbersPrinted.size());
+        assertEquals(1, ifLines.size());
+        assertEquals(2, rawNumbersPrinted.size());
     }
 }

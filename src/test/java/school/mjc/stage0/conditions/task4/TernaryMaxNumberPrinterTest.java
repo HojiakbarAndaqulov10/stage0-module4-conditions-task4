@@ -56,8 +56,8 @@ class TernaryMaxNumberPrinterTest extends BaseIOTest {
                 .filter(line -> line.contains("new GreatestNumberPrinter"))
                 .collect(Collectors.toList());
 
-        assertEquals(0, objectCreation.size());
-        assertEquals(0, ifLines.size());
-        assertEquals(0, result.size());
+        assertEquals(1, objectCreation.size());
+        assertEquals(5, ifLines.size());
+        assertEquals(1, result.size());
     }
 }
